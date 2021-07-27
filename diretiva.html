@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" v-model="textPar" />
+        <br/>
+        <div v-if="textPar  == 1">  
+            <img :src="srcImg1" :title="titleImg"/>  
+        </div>
+        <div v-if="textPar  == 2">  
+            <img :src="srcImg2" :title="titleImg"/>  
+        </div>
+        <div v-if="textPar  == 3">  
+            <img :src="srcImg3" :title="titleImg"/>  
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+
+        new Vue({
+
+            el: '#app',
+            data: {
+                srcImg1: 'Imagens/Kakashi.png',
+                srcImg2: 'Imagens/sasuke.png',
+                srcImg3: 'Imagens/naruto.png',
+                titleImg: 'Kakashi',
+                url: 'http://vuejs.org', 
+                textPar: ""  
+            }
+
+        })
+
+    </script>
+
+   
+</body>
+
+</html>

@@ -16,10 +16,10 @@
         <div v-if="textPar  == 1">  
             <img :src="srcImg1" :title="titleImg"/>  
         </div>
-        <div v-if="textPar  == 2">  
+        <div v-else-if="textPar  == 2">  
             <img :src="srcImg2" :title="titleImg"/>  
         </div>
-        <div v-if="textPar  == 3">  
+        <div v-else>  
             <img :src="srcImg3" :title="titleImg"/>  
         </div>
     </div>
